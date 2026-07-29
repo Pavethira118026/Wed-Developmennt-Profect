@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Membership Registration Form</title>
+</head>
+
+<body bgcolor="Lavender">
+
+<h1 align="center">LIBRARY MEMBERSHIP REGISTRATION FORM</h1>
+
+<form onsubmit="showMessage(); return false;">
+
+<h2>Personal Information</h2>
+
+<label>Full Name:</label>
+<input type="text" required><br><br>
+
+<label>Email:</label>
+<input type="email" required><br><br>
+
+<label>Phone:</label>
+<input type="tel" required><br><br>
+
+<label>Date of Birth:</label>
+<input type="date"><br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+<br><br>
+
+<label>Address:</label><br>
+<textarea rows="4" cols="40"></textarea>
+<br><br>
+
+<h2>Book Preferences</h2>
+
+<input type="checkbox"> Fiction<br>
+<input type="checkbox"> Science<br>
+<input type="checkbox"> Technology<br>
+<input type="checkbox"> History<br>
+<input type="checkbox"> Biography<br><br>
+
+<label>Membership Type:</label>
+<select>
+    <option>Select Membership</option>
+    <option>Student</option>
+    <option>Faculty</option>
+    <option>Public Member</option>
+</select>
+
+<br><br>
+
+<label>Upload ID Card:</label>
+<input type="file"><br><br>
+
+<h2>Account Information</h2>
+
+<label>Username:</label>
+<input type="text" required><br><br>
+
+<label>Password:</label>
+<input type="password" required><br><br>
+
+<label>Confirm Password:</label>
+<input type="password" required><br><br>
+
+<input type="checkbox" required>
+I agree to the Library Rules and Regulations.
+<br><br>
+
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+<input type="button" value="Help" onclick="alert('Please fill all the details correctly.')">
+
+</form>
+
+<p id="message"></p>
+
+<script>
+function showMessage()
+{
+    document.getElementById("message").innerHTML =
+    "<h2 style='color:green;'>✔ Registration Successful!</h2>";
+}
+</script>
+
+</body>
+</html>
