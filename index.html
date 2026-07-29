@@ -1,90 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Library Membership Registration Form</title>
+<h1>PSGR Krishnammal College for Women</h1>
+<h3>(Autonomous College)</h3>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSGR Krishnammal College for Women</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#E6E6FA;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header{
+    background:white;
+    text-align:center;
+    padding:20px;
+    box-shadow:0px 3px 10px gray;
+}
+
+header img{
+    width:140px;
+    height:auto;
+}
+
+header h1{
+    color:darkblue;
+    margin-top:10px;
+}
+
+header h3{
+    color:#444;
+    margin-top:5px;
+}
+
+/* Navigation */
+
+nav{
+    background:purple;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    margin:20px;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Sections */
+
+section{
+    width:85%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0px 0px 10px gray;
+}
+
+section h2{
+    color:purple;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+section p{
+    font-size:18px;
+    line-height:30px;
+}
+
+ul{
+    margin-left:30px;
+    font-size:18px;
+    line-height:35px;
+}
+
+.back{
+    text-align:center;
+    margin-top:20px;
+}
+
+.back a{
+    text-decoration:none;
+    color:white;
+    background:purple;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+.back a:hover{
+    background:darkblue;
+}
+
+/* Footer */
+
+footer{
+    background:purple;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+</style>
+
 </head>
 
-<body bgcolor="Lavender">
+<body>
 
-<h1 align="center">LIBRARY MEMBERSHIP REGISTRATION FORM</h1>
+<!-- HOME -->
 
-<form onsubmit="showMessage(); return false;">
+<header id="home">
 
-<h2>Personal Information</h2>
+<a href="https://www.psgrkcw.ac.in" target="_blank">
+<img src="psgrkcw-new-logo.png" alt="College Logo">
+</a>
 
-<label>Full Name:</label>
-<input type="text" required><br><br>
+<h1>PSGR KRISHNAMMAL COLLEGE FOR WOMEN</h1>
 
-<label>Email:</label>
-<input type="email" required><br><br>
+<h3>(Autonomous College)</h3>
 
-<label>Phone:</label>
-<input type="tel" required><br><br>
+</header>
 
-<label>Date of Birth:</label>
-<input type="date"><br><br>
+<!-- Navigation -->
 
-<label>Gender:</label>
-<input type="radio" name="gender"> Male
-<input type="radio" name="gender"> Female
-<input type="radio" name="gender"> Other
-<br><br>
+<nav>
 
-<label>Address:</label><br>
-<textarea rows="4" cols="40"></textarea>
-<br><br>
+<a href="#home">Home</a>
 
-<h2>Book Preferences</h2>
+<a href="#ug">UG Courses</a>
 
-<input type="checkbox"> Fiction<br>
-<input type="checkbox"> Science<br>
-<input type="checkbox"> Technology<br>
-<input type="checkbox"> History<br>
-<input type="checkbox"> Biography<br><br>
+<a href="#pg">PG Courses</a>
 
-<label>Membership Type:</label>
-<select>
-    <option>Select Membership</option>
-    <option>Student</option>
-    <option>Faculty</option>
-    <option>Public Member</option>
-</select>
+</nav>
 
-<br><br>
+<!-- Home Section -->
 
-<label>Upload ID Card:</label>
-<input type="file"><br><br>
+<section>
 
-<h2>Account Information</h2>
+<h2>WELCOME TO PSGR KRISHNAMMAL COLLEGE FOR WOMEN</h2>
 
-<label>Username:</label>
-<input type="text" required><br><br>
+<p>
+PSGR Krishnammal College for Women is one of the premier autonomous colleges
+in Tamil Nadu. The institution provides quality education with excellent
+faculty, modern laboratories, library, placement support, hostel facilities,
+and sports infrastructure.
+</p>
 
-<label>Password:</label>
-<input type="password" required><br><br>
+<br>
 
-<label>Confirm Password:</label>
-<input type="password" required><br><br>
+<h2>Courses Offered</h2>
 
-<input type="checkbox" required>
-I agree to the Library Rules and Regulations.
-<br><br>
+<p>Click the links below to view the course details.</p>
 
-<input type="submit" value="Register">
-<input type="reset" value="Reset">
-<input type="button" value="Help" onclick="alert('Please fill all the details correctly.')">
+<ul>
+<li><a href="#ug">UG Courses Details</a></li>
+<li><a href="#pg">PG Courses Details</a></li>
+</ul>
 
-</form>
+<br>
 
-<p id="message"></p>
+<h2>Contact Details</h2>
 
-<script>
-function showMessage()
-{
-    document.getElementById("message").innerHTML =
-    "<h2 style='color:green;'>✔ Registration Successful!</h2>";
-}
-</script>
+<p><b>Phone :</b> +91 422 429 5959</p>
+
+<p><b>Email :</b> principal@psgrkcw.ac.in</p>
+
+<p><b>Website :</b> https://www.psgrkcw.ac.in</p>
+
+</section>
+
+<!-- UG -->
+
+<section id="ug">
+
+<h2>UNDER GRADUATE COURSES</h2>
+
+<ul>
+
+<li>B.Com (CA)</li>
+<li>B.Com (PA)</li>
+<li>B.Com (BA)</li>
+<li>BBA (Business Process Management)</li>
+<li>BBA (Retail Management)</li>
+<li>B.Sc Computer Science</li>
+<li>B.Sc Mathematics</li>
+<li>B.Sc Physics</li>
+<li>B.Sc Chemistry</li>
+<li>B.Sc Biotechnology</li>
+<li>BCA</li>
+<li>BA English Literature</li>
+
+</ul>
+
+<div class="back">
+
+<a href="#home">Back to Home</a>
+
+</div>
+
+</section>
+
+<!-- PG -->
+
+<section id="pg">
+
+<h2>POST GRADUATE COURSES</h2>
+
+<ul>
+
+<li>M.Com</li>
+<li>MBA</li>
+<li>MCA</li>
+<li>M.Sc Computer Science</li>
+<li>M.Sc Mathematics</li>
+<li>M.Sc Physics</li>
+<li>M.Sc Chemistry</li>
+<li>MA English</li>
+
+</ul>
+
+<div class="back">
+
+<a href="#home">Back to Home</a>
+
+</div>
+
+</section>
+
+<!-- Infrastructure -->
+
+<section>
+
+<h2>COLLEGE INFRASTRUCTURE</h2>
+
+<ul>
+
+<li>Smart Classrooms</li>
+<li>Digital Library</li>
+<li>Computer Laboratories</li>
+<li>Science Laboratories</li>
+<li>Seminar Halls</li>
+<li>Placement Cell</li>
+<li>Hostel Facility</li>
+<li>Sports Ground</li>
+<li>Cafeteria</li>
+<li>Wi-Fi Campus</li>
+
+</ul>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<h3>PSGR Krishnammal College for Women</h3>
+
+<p>Peelamedu, Coimbatore - 641004</p>
+
+<p>Phone : +91 422 429 5959</p>
+
+<p>Email : principal@psgrkcw.ac.in</p>
+
+<p>Website : https://www.psgrkcw.ac.in</p>
+
+<p><br>© 2026 PSGR Krishnammal College for Women. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 </html>
