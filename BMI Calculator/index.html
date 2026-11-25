@@ -1,0 +1,147 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Health Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Left Section -->
+        <div class="left-section">
+
+            <div class="logo">
+                ⚖️
+            </div>
+
+            <h1>BMI<br>Calculator</h1>
+
+            <p class="subtitle">
+                Calculate your Body Mass Index and understand
+                your general weight category with simple
+                health recommendations.
+            </p>
+
+            <div class="info-box">
+                <h3>💡 What is BMI?</h3>
+
+                <p>
+                    Body Mass Index (BMI) is a measurement
+                    calculated using a person's height and weight.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>📌 BMI Formula</h3>
+
+                <p>
+                    BMI = Weight (kg) ÷ Height² (m)
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Right Section -->
+        <div class="right-section">
+
+            <h2>Calculate Your BMI</h2>
+
+            <form action="calculate.php" method="POST">
+
+                <div class="input-group">
+
+                    <label for="name">
+                        👤 Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="height">
+                        📏 Height
+                    </label>
+
+                    <input
+                        type="number"
+                        id="height"
+                        name="height"
+                        placeholder="Example: 165"
+                        step="0.1"
+                        min="1"
+                        required
+                    >
+
+                    <small>
+                        Enter height in centimeters (cm)
+                    </small>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="weight">
+                        ⚖️ Weight
+                    </label>
+
+                    <input
+                        type="number"
+                        id="weight"
+                        name="weight"
+                        placeholder="Example: 60"
+                        step="0.1"
+                        min="1"
+                        required
+                    >
+
+                    <small>
+                        Enter weight in kilograms (kg)
+                    </small>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button type="submit">
+                        Calculate BMI
+                    </button>
+
+                    <button type="reset" class="reset-btn">
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <div class="footer">
+                BMI Health Calculator | PHP Web Application
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

@@ -1,0 +1,318 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    /* Stylish different background */
+    background:
+        radial-gradient(
+            circle at top left,
+            #ff758c,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #6a82fb,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #141e30,
+            #243b55
+        );
+
+    color: white;
+}
+
+
+/* Main Container */
+
+.main-container {
+    width: 900px;
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+
+/* LEFT SECTION */
+
+.left-section {
+    padding: 45px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.16),
+            rgba(255, 255, 255, 0.04)
+        );
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    border-radius: 20px;
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(255, 117, 140, 0.4);
+}
+
+.left-section h1 {
+    font-size: 40px;
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #e4eaff;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* INFORMATION BOX */
+
+.info-box {
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.info-box h3 {
+    color: #ffd1dc;
+
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #e8ecff;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* RIGHT SECTION */
+
+.right-section {
+    padding: 40px;
+
+    background: white;
+
+    color: #222;
+}
+
+.right-section h2 {
+    font-size: 27px;
+
+    margin-bottom: 28px;
+
+    color: #222;
+}
+
+
+/* INPUT */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+    color: #444;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #e3e3e3;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #ff758c;
+
+    box-shadow:
+        0 0 0 4px rgba(255, 117, 140, 0.12);
+}
+
+.input-group small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* BUTTONS */
+
+.button-group {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.button-group button {
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff758c,
+            #ff7eb3
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.button-group button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(255, 117, 140, 0.35);
+}
+
+.button-group .reset-btn {
+    flex: 0.5;
+
+    background: #eeeeee;
+
+    color: #444;
+}
+
+.button-group .reset-btn:hover {
+    background: #dddddd;
+
+    box-shadow: none;
+}
+
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-section {
+        padding: 30px;
+    }
+
+    .right-section {
+        padding: 30px;
+    }
+
+    .left-section h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group .reset-btn {
+        flex: 1;
+    }
+}
