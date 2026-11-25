@@ -1,0 +1,390 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Course Registration</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+
+        <header>
+
+            <div class="logo">
+                Learn<span>Hub</span>
+            </div>
+
+            <p>
+                Course Registration Portal
+            </p>
+
+        </header>
+
+
+        <!-- Registration Form -->
+
+        <main>
+
+            <div class="form-card">
+
+                <div class="form-title">
+
+                    <div class="icon">
+                        🎓
+                    </div>
+
+                    <div>
+                        <h1>
+                            Course Registration
+                        </h1>
+
+                        <p>
+                            Register for your preferred course
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <form action="register.php"
+                      method="POST">
+
+
+                    <!-- Student Name -->
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter 10-digit mobile number"
+                            pattern="[0-9]{10}"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Gender -->
+
+                    <div class="input-group">
+
+                        <label>
+                            Gender
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Male"
+                                    required
+                                >
+                                Male
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Female"
+                                >
+                                Female
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Other"
+                                >
+                                Other
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Course -->
+
+                    <div class="input-group">
+
+                        <label for="course">
+                            Select Course
+                        </label>
+
+                        <select
+                            id="course"
+                            name="course"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select a Course --
+                            </option>
+
+                            <option value="Full Stack Web Development">
+                                Full Stack Web Development
+                            </option>
+
+                            <option value="Artificial Intelligence">
+                                Artificial Intelligence
+                            </option>
+
+                            <option value="Data Science">
+                                Data Science
+                            </option>
+
+                            <option value="Cyber Security">
+                                Cyber Security
+                            </option>
+
+                            <option value="Cloud Computing">
+                                Cloud Computing
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Study Mode -->
+
+                    <div class="input-group">
+
+                        <label>
+                            Study Mode
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="mode"
+                                    value="Online"
+                                    required
+                                >
+                                Online
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="mode"
+                                    value="Offline"
+                                >
+                                Offline
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="mode"
+                                    value="Hybrid"
+                                >
+                                Hybrid
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Date -->
+
+                    <div class="input-group">
+
+                        <label for="date">
+                            Preferred Start Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Address -->
+
+                    <div class="input-group">
+
+                        <label for="address">
+                            Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter your address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Terms -->
+
+                    <div class="terms">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                name="terms"
+                                value="Accepted"
+                                required
+                            >
+
+                            I agree to the course registration
+                            terms and conditions.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <button type="submit"
+                            class="register-btn">
+
+                        Register Now →
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Information Card -->
+
+            <div class="info-card">
+
+                <div class="info-content">
+
+                    <span class="small-heading">
+                        START LEARNING TODAY
+                    </span>
+
+                    <h2>
+                        Invest in your
+                        <span>future.</span>
+                    </h2>
+
+                    <p>
+                        Choose the right course, develop
+                        practical skills and take the next
+                        step toward your career goals.
+                    </p>
+
+                </div>
+
+
+                <div class="benefits">
+
+                    <div>
+                        <strong>✓</strong>
+                        Expert Trainers
+                    </div>
+
+                    <div>
+                        <strong>✓</strong>
+                        Practical Learning
+                    </div>
+
+                    <div>
+                        <strong>✓</strong>
+                        Course Certificate
+                    </div>
+
+                    <div>
+                        <strong>✓</strong>
+                        Career Guidance
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <footer>
+
+            © 2026 LearnHub Course Registration System
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+}
+
+body {
+
+    min-height: 100vh;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 10%,
+            #ffb6d9,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            #9c8cff,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #18152f,
+            #282153,
+            #3b2865
+        );
+
+    color: #222;
+
+    padding: 30px 15px;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+
+    max-width: 1150px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: white;
+
+    padding: 20px 10px;
+
+    margin-bottom: 25px;
+}
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+.logo span {
+
+    color: #ff83b8;
+}
+
+header p {
+
+    color: #d9d5e9;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr 0.8fr;
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.form-card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.3);
+}
+
+
+/* FORM TITLE */
+
+.form-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 25px;
+
+    border-bottom:
+        1px solid #eeeeee;
+}
+
+.icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff6b9d,
+            #8b7cff
+        );
+
+    font-size: 30px;
+}
+
+.form-title h1 {
+
+    color: #292344;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+}
+
+.form-title p {
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group {
+
+    margin-bottom: 20px;
+}
+
+.input-group > label {
+
+    display: block;
+
+    color: #403b4f;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"],
+.input-group input[type="date"],
+.input-group select,
+.input-group textarea {
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1.5px solid #dedce5;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    color: #333;
+
+    background: #fafafd;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+
+    border-color: #8b7cff;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(139,124,255,0.1);
+}
+
+textarea {
+
+    resize: vertical;
+}
+
+
+/* =========================
+   RADIO
+========================= */
+
+.radio-group {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+
+    font-size: 13px;
+
+    color: #555;
+
+    cursor: pointer;
+}
+
+.radio-group input {
+
+    margin-right: 5px;
+
+    accent-color: #8b7cff;
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms {
+
+    margin: 20px 0;
+
+    padding: 14px;
+
+    background: #f7f6ff;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+
+    color: #666;
+}
+
+.terms input {
+
+    margin-right: 7px;
+
+    accent-color: #8b7cff;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.register-btn {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff5d95,
+            #8373ff
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(125,104,230,0.3);
+}
+
+
+/* =========================
+   INFORMATION CARD
+========================= */
+
+.info-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    color: white;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            #ff70aa,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 20% 80%,
+            #6f5cff,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #292344,
+            #463277
+        );
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.25);
+}
+
+.info-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.small-heading {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #ff9fc4;
+
+    font-weight: bold;
+}
+
+.info-card h2 {
+
+    font-size: 39px;
+
+    line-height: 1.15;
+
+    margin: 20px 0;
+}
+
+.info-card h2 span {
+
+    color: #ff8bb9;
+}
+
+.info-card p {
+
+    color: #dcd7eb;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+
+/* BENEFITS */
+
+.benefits {
+
+    margin-top: 40px;
+
+    display: grid;
+
+    gap: 15px;
+}
+
+.benefits div {
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255,255,255,0.1);
+
+    border:
+        1px solid rgba(255,255,255,0.1);
+
+    color: #eee;
+
+    font-size: 13px;
+}
+
+.benefits strong {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 24px;
+
+    height: 24px;
+
+    margin-right: 8px;
+
+    border-radius: 50%;
+
+    background: #ff75a9;
+
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    color: #aaa4bd;
+
+    font-size: 12px;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    main {
+
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    body {
+
+        padding: 15px 10px;
+    }
+
+    header {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+
+    .form-card {
+
+        padding: 25px 20px;
+    }
+
+    .form-title h1 {
+
+        font-size: 22px;
+    }
+
+    .radio-group {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .info-card h2 {
+
+        font-size: 32px;
+    }
+}
